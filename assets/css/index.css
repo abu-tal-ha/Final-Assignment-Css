@@ -80,9 +80,13 @@ body {
 .nav-bars {
     display: none;
 }
-
 /* nav responsive */
-@media screen and (max-width: 425px) {
+@media  (min-width: 320px) and (max-width: 425px) {
+    /* .link-nav.active, .icon-nav.active {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    } */
     .link-nav,.icon-nav {
         display: none;
     }
@@ -93,9 +97,162 @@ body {
     .logo {
         display: flex;
         align-items: center;
-        gap: 120px;
+        /* gap: 120px; */
         cursor: pointer;
+        width: 100%;
         justify-content: space-between;
     }
+}
 
+
+
+/* hero section start */
+
+.hero-container {
+    margin-top: 35px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 1440px;
+    min-height: 716px;
+    background-image: url(/assets/image/hero.png);
+    justify-content: center;
+}
+
+.hero-collection {
+    max-width: 1400px;
+    margin: auto;
+    position: relative;
+}
+.hero-arriva {
+    background-color: #FFF3E3;
+    position: absolute;
+    margin-top: 220px;
+    right: 0;
+    padding: 30px;
+    /* margin-left: 740px; */
+}
+
+.hero-h4 {
+    color: #333333;
+    font-size: 15px;
+    font-weight: 600;
+}
+.hero-discover {
+    font-size: 52px;
+    font-weight: bold;
+    color: #B88E2F;
+}
+.her-lorem {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+    margin-top: 18px;
+}
+.hero-btn {
+    background-color: #B88E2F;
+    color: white;
+    border: none;
+    width: 222px;
+    height: 74px;
+    margin-top: 46px;
+    cursor: pointer;
+}
+.hero-btn:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(142deg, rgba(2,0,36,1) 0%, rgba(135,29,180,1) 35%, rgba(0,212,255,1) 100%);
+    transition: all 0.3s;
+}
+
+
+/* hero responsive */
+@media (max-width: 768px) {
+    .hero-container {
+        min-width: 100%;
+        min-height: 500px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .hero-collection {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .hero-arriva {
+        margin-top: 100px;
+        padding: 20px;
+        position: relative;
+        right: auto;
+        width: 90%;
+        margin: auto;
+    }
+
+    .hero-discover {
+        font-size: 22px;
+    }
+
+    .her-lorem {
+        font-size: 14px;
+    }
+
+    .hero-btn {
+        width: 150px;
+        height: 50px;
+    }
+}
+
+
+
+/* Browse Range section start  */
+.browse-container {
+    margin-top: 56px;
+}
+.browse-text {
+    text-align: center;
+
+}
+.browse-h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+.browse-p {
+    color: #666666;
+    font-weight: 400;
+    font-size: 20px;
+}
+.brose-img-container {
+    display: flex;
+    gap: 40px;
+    margin-left: 77px;
+    margin-top: 62px;
+}
+.dining-card {
+    text-align: center;
+
+}
+.dining {
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+/* browse res */
+@media (max-width: 768px) {
+    .brose-img-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .dining-card img {
+        height: 300px;
+    }
+
+    .browse-h2 {
+        font-size: 28px;
+    }
+
+    .browse-p {
+        font-size: 14px;
+    }
 }

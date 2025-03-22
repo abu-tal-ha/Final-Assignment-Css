@@ -168,15 +168,17 @@ body {
 /* hero responsive */
 @media (max-width: 768px) {
     .hero-container {
-        min-width: 100%;
-        min-height: 500px;
+        min-width: 100px;
+        min-height: 400px;
         background-size: cover;
         background-position: center;
+        
     }
     
     .hero-collection {
         max-width: 100%;
         padding: 20px;
+        margin-left: -20px;
     }
 
     .hero-arriva {
@@ -243,7 +245,7 @@ body {
         flex-direction: column;
         align-items: center;
         margin-left: -40px;
-        min-width: 500px;
+        /* min-width: 500px; */
     }
     
     .dining-card img {
@@ -624,7 +626,7 @@ body {
 }
 
 /* beautiful section responsive */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
     .beautiful-main-container {
         padding: 20px;
     }
@@ -639,21 +641,31 @@ body {
     .beautiful-text-site {
         text-align: center;
         padding-bottom: 20px;
+        margin-right: 100px;
+        /* width: 200px; */
     }
-
-    .beautiful-img-site, .beautiful-img, .right-site-img-beauti {
-        width: 100%;
+    .beautiful-rooms {
+        font-size: 18px;
+    }
+    .beautiful-img-site, .beautiful-img {
+        /* width: 100%; */
         margin-bottom: 20px;
     }
+    .right-site-img-beauti {
+        display: none;
+    }
 
-    .beautiful-img-site img, 
-    .beautiful-img img, 
-    .right-site-img-beauti img {
-        width: 100%;
+    /* .beautiful-img-site img,  */
+    .beautiful-img img
+    {
+        /* width: 100%; */
         height: auto;
         object-fit: cover;
     }
-
+    .beautiful-img-site img {
+        margin-right: 20px;
+        width: 100%;
+    }
     .bed-room {
         margin-top: -140px;
         margin-left: 10px;
@@ -663,6 +675,7 @@ body {
         position: relative;
         margin-top: 10px;
         right: auto;
+        margin-right: 20px;
     }
 
     .indicator-container {

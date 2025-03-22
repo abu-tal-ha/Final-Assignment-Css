@@ -244,7 +244,7 @@ body {
     .brose-img-container {
         flex-direction: column;
         align-items: center;
-        margin-left: -8px;
+        margin-left: 10px;
         /* min-width: 500px; */
     }
     
@@ -656,24 +656,30 @@ body {
     .beautiful-rooms {
         font-size: 18px;
     }
-    .beautiful-img-site, .beautiful-img {
-        /* width: 100%; */
+    .beautiful-desingner {
+        font-size: 12px;
+    }
+    .beautiful-img-site{
+        width: 100%;
+        margin-right: 30px;
         margin-bottom: 20px;
     }
     .right-site-img-beauti {
         display: none;
     }
 
-    /* .beautiful-img-site img,  */
-    .beautiful-img img
-    {
-        /* width: 100%; */
+    /* .beautiful-img img{
+        width: 100%;
         height: auto;
         object-fit: cover;
-    }
+    } */
     .beautiful-img-site img {
         margin-right: 20px;
         width: 100%;
+    }
+    .beautiful-img {
+        width: 100%;
+        margin-right: 10px;
     }
     .bed-room {
         margin-top: -140px;

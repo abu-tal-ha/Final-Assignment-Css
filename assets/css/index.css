@@ -178,7 +178,7 @@ body {
     .hero-collection {
         max-width: 100%;
         padding: 20px;
-        margin-left: -20px;
+        /* margin-left: -20px; */
     }
 
     .hero-arriva {
@@ -428,7 +428,7 @@ body {
 }
 
 /* products section responsive */
-@media screen and (max-width: 425px) {
+/* @media screen and (max-width: 425px) {
     .prodeuct-container {
         margin: 0; 
         padding: 0; 
@@ -439,12 +439,16 @@ body {
         margin-left: -20px;
     }
  }
- 
+  */
 
 @media screen and (max-width: 768px) {
     .prodeuct-container {
         align-items: center;
-        margin-left: -30px;
+        /* margin-left: -30px; */
+    }
+    .products-cart-all {
+        text-align: center;
+        width: 100%;
     }
     .products-h3 {
         font-size: 20px;

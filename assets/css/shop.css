@@ -337,22 +337,45 @@ body {
 }
 
 .all-pr {
+    display: flex;
+    justify-content: center;
     text-align: center;
+    margin-top: 70px;
+    gap: 38px;
 }
 .show {
-    width: 245px;
-    height: 48px;
-    margin-top: 44px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #B88E2F;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    background-color: #F9F1E7;
     border: 2px solid #B88E2F;
     cursor: pointer;
+
+}
+.shown {
+    width: 98px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    background-color: #F9F1E7;
+    /* border: 2px solid #B88E2F; */
+    border: none;
+    cursor: pointer;
+}
+.shown:hover{
+    color: white;
+    background: linear-gradient(236deg, rgba(184,142,47,1) 0%, rgba(184,142,47,1) 41%, rgba(38,74,128,1) 78%, rgba(184,142,47,1) 97%);
+    transition: all ease 0.5s;
 }
 .show:hover {
-    background: rgb(2,0,36);
-    background: linear-gradient(236deg, rgba(2,0,36,1) 0%, rgba(70,130,222,1) 71%, rgba(158,29,180,1) 76%, rgba(0,212,255,1) 100%);
-    transition: all 0.3s ease;
+    color: white;
+    background-color: #B88E2F;
+    transition: all ease-in-out;
 }
 
 /* products section responsive */
@@ -390,296 +413,65 @@ body {
    
 }
 
-/* beautiful section start */
-.beautiful-main-container {
-    background-color: #FCF8F3;
-    margin-top: 70px;
-}
-.beautiful-container {
-    max-width: 1440px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-.beautiful-text-site {
-    margin-top: 220px;
-    margin-left: 100px;
-
-}
-.beautiful-rooms {
-    font-size: 40px;
-    font-weight: bold;
-    color: #3A3A3A;
-}
-.beautiful-desingner {
-    font-size: 16px;
-    font-weight: 500;
-    color: #616161;
-    margin-top: 7px;
-}
-.more-btn {
-    width: 176px;
-    height: 48px;
-    background-color: #B88E2F;
-    border: none;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 25px;
-}
-.more-btn:hover {
-    background: rgb(2,0,36);
-    background: linear-gradient(236deg, rgba(2,0,36,1) 0%, rgba(29,180,171,1) 23%, rgba(38,74,128,1) 50%, rgba(0,212,255,1) 100%);
-    transition: 0.3s ease;
-}
-.beautiful-img-site {
-    margin-top: 44px;
-    margin-left: 42px;
-}
-.bed-room {
-    position: absolute;
-    background-color: white;
-    padding: 10px;
-    width: 217px;
-    height: 130px;
-    text-align: center;
-    margin-top: -173px;
-    margin-left: 30px;
-}
-.room {
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 32px;
-    color: #616161;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px; 
-}
-
-.room-border {
-    height: 2px;
-    width: 27px;
-    background-color: #616161;
-}
-
-
-.Peace {
-    font-size: 28px;
-    font-weight: 600;
-    margin-top: 8px;
-}
-
-
-.arorw-rihgt {
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    background: #B88E2F;
-    color: white;
-    border: none;
-    margin-left: 108px;
-    margin-top: -34px;
-    cursor: pointer;
-    font-size: 20px;
-}
-.beautiful-img {
-    margin-top: 44px;
-    margin-left: 24px;
-}
-
-
-.indicator-container {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    margin-top: 44px;
-    margin-left: 24px;
-}
-
-.indicator {
-    width: 30px; 
-    height: 30px;
-    background-color: transparent;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: border-color 0.3s;
-}
-
-
-.indicator:first-child {
-    border: 2px solid #B88E2F; 
-}
-
-.indicator:hover {
-    border: 2px solid #B88E2F;
-}
-
-.inner-indicator {
-    width: 12px; 
-    height: 12px;
-    background-color: #d3d3d3;
-    border-radius: 50%;
-    transition: width 0.3s, height 0.3s, background-color 0.3s;
-}
-
-
-.indicator:first-child .inner-indicator {
-    background-color: #B88E2F;
-}
-
-.indicator:hover .inner-indicator {
-    width: 6px;  
-    height: 6px;
-    background-color: #B88E2F;
-    cursor: pointer;
-}
-
- 
-.angle-right {
-    position: relative;
-    
-}
-.angle {
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-    color: #B88E2F;
-    border: none;
-    right: -19px;
-    margin-top: -315px;
-    box-shadow: -1px 4px 31px 0px rgba(0,0,0,0.75);
-    cursor: pointer;
-}
-
-.right-site-img-beauti {
-    margin-top: 44px;
-    margin-left: 30px;
-}
-
-/* beautiful section responsive */
-@media screen and (max-width: 768px) {
-    .beautiful-main-container {
-        padding: 20px;
-    }
-
-    .beautiful-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: -170px;
-    }
-
-    .beautiful-text-site {
-        text-align: center;
-        padding-bottom: 20px;
-        margin-right: 100px;
-        /* width: 200px; */
-    }
-    .beautiful-rooms {
-        font-size: 18px;
-    }
-    .beautiful-desingner {
-        font-size: 12px;
-    }
-    .beautiful-img-site{
-        width: 100%;
-        margin-right: 30px;
-        margin-bottom: 20px;
-    }
-    .right-site-img-beauti {
-        display: none;
-    }
-
-    /* .beautiful-img img{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    } */
-    .beautiful-img-site img {
-        margin-right: 20px;
-        width: 100%;
-    }
-    .beautiful-img {
-        /* width: 100%; */
-        margin-right: 15px;
-    }
-    .bed-room {
-        margin-top: -140px;
-        margin-left: 10px;
-    }
-
-    .angle-right {
-        position: relative;
-        margin-top: 10px;
-        right: auto;
-        margin-right: 20px;
-    }
-
-    .indicator-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-    }
-}
-
-
-
-
-
 
 /* funiroFurniture section start */
+.funiroFurniture-container {
+    background-color: #FAF3EA;
+    margin-top: 85px;
+    height: 290px;
+}
 .funiro-container {
-    margin-top: 40px;
-}
-.Share-container {
-    max-width: 1440px;
+    width: 1440px;
     margin: auto;
-    text-align: center;
+    display: flex;
+    gap: 57px;
 }
-.sharep {
-    color: #616161;
-    font-size: 20px;
-    font-weight: 600;
+.support-container {
+    /* max-width: 1440px;
+    margin: auto; */
+    text-align: center;
 }
 .funiro-h4 {
     color: #3A3A3A;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: 600;
 }
-.full-img  {
-    /* width: 100%; */
-    /* height: 100%; */
-    object-fit: cover;
-    background-image: url(/assets/image/Images.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-width: 1799px;
-    min-height: 779px;
-
+.sharep {
+    color: #616161;
+    margin-top: 5px;
+}
+.trpfy-cart {
+    /* display: flex; */
+    align-items: center;
+    gap: 10px;
+    margin-top: 70px;
+    margin-left: 85px;
 }
 
 /* funiroFurniture res */
 @media (max-width: 768px) {
-   
+    .funiro-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
 }
 
 
 
-/*  */
+/*  footer section start */
 .container-ft {
     background-color: #f9f9f9;
     padding: 40px;
+    /* max-width: 1440px;
+    margin: auto; */
+    /* margin-top: 108px; */
+    
+  }
+  .footer-container-main {
     max-width: 1440px;
     margin: auto;
-    margin-top: 108px;
-    
   }
   .footer-container {
     display: grid;

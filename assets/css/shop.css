@@ -393,10 +393,6 @@ body {
   */
 
 @media screen and (max-width: 768px) {
-    .prodeuct-container {
-        /* align-items: center; */
-        /* margin-left: -30px; */
-    }
     .products-cart-all {
         text-align: center;
         /* width: 100%; */
@@ -414,11 +410,11 @@ body {
 }
 
 
-/* funiroFurniture section start */
+/* support section start */
 .funiroFurniture-container {
     background-color: #FAF3EA;
     margin-top: 85px;
-    height: 290px;
+    min-height: 290px;
 }
 .funiro-container {
     width: 1440px;
@@ -448,14 +444,18 @@ body {
     margin-left: 85px;
 }
 
-/* funiroFurniture res */
+/* support res */
 @media (max-width: 768px) {
-    .funiro-container{
-        flex-direction: column;
+    .funiro-container {
+        flex-direction: column; 
         align-items: center;
-        gap: 10px;
+        gap: 20px;
+        width: 100%; 
     }
-    
+    .funiro-container {
+        /* margin-bottom: 20px; */
+
+    }
 }
 
 

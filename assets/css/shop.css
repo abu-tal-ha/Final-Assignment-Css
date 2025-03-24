@@ -88,25 +88,39 @@ body {
 .nav-bars {
     display: none;
 }
+.link-nav, .icon-nav {
+    transition: right 0.3s ease;
+}
 /* nav responsive */
 @media  (min-width: 320px) and (max-width: 425px) {
-    /* .link-nav.active, .icon-nav.active {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    } */
-    .link-nav,.icon-nav {
+    .link-nav, .icon-nav {
+        position: fixed;
+        top: 50px;
+        right: -100%;
+        width: 350px;
+        height: 70px;
+        background-color: white;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    .link-nav.active {
+        right: 0;
+    }
+
+    .icon-nav {
         display: none;
     }
+
     .nav-bars {
         display: block;
         font-size: 20px;
+        cursor: pointer;
     }
+
     .logo {
         display: flex;
         align-items: center;
-        /* gap: 120px; */
-        cursor: pointer;
         width: 100%;
         justify-content: space-between;
     }
@@ -451,10 +465,6 @@ body {
         align-items: center;
         gap: 20px;
         width: 100%; 
-    }
-    .funiro-container {
-        /* margin-bottom: 20px; */
-
     }
 }
 

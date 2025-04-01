@@ -250,6 +250,7 @@ body {
     cursor: pointer;
     width: 200px;
     height: 48px;
+    text-decoration: none;
     border: none;
     left: 50%;
     transform: translate(-50%, -50%);

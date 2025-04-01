@@ -369,6 +369,10 @@ body {
     cursor: pointer;
     padding: 5px;
 }
+.add-a {
+    text-decoration: none;
+    color: black;
+}
 
 .add-to, .compare  {
     width: 215px;
@@ -382,7 +386,7 @@ body {
     margin-right: 10px;
 
 }
-.buy-now:hover, .add-to:hover, .compare:hover {
+.buy-now:hover, .add-to:hover, .compare:hover, .add-a:hover {
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(116,87,211,1) 28%, rgba(252,70,107,1) 86%);
     color: white;
     border: none; 
